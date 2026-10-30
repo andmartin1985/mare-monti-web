@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f3b57" />
+    <!-- Limita da dove la pagina può caricare codice e dati: anche se un testo malevolo
+         entrasse nell'archivio (es. da un backup), non potrebbe eseguire script né inviare
+         dati (come la chiave API) a server diversi da quelli elencati. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://tile.openstreetmap.org https://*.tile.opentopomap.org https://server.arcgisonline.com https://ows.emodnet-bathymetry.eu https://tiles.openseamap.org; connect-src 'self' https://tile.openstreetmap.org https://*.tile.opentopomap.org https://server.arcgisonline.com https://ows.emodnet-bathymetry.eu https://tiles.openseamap.org https://api.anthropic.com https://api.open-meteo.com https://archive-api.open-meteo.com https://marine-api.open-meteo.com; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <title>Mare e Monti</title>
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Mare e Monti" />
+    <script type="module" crossorigin src="./assets/index-DYC8Q6Qm.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index--cM4AsXY.css">
+  </head>
+  <body>
+    <div id="app">
+      <main id="view"></main>
+      <nav class="tabbar" aria-label="Sezioni">
+        <a href="#/mappa" data-tab="mappa"><span class="ti">🗺️</span>Mappa</a>
+        <a href="#/archivio" data-tab="archivio"><span class="ti">📒</span>Archivio</a>
+        <button type="button" id="add-btn" class="add" aria-label="Nuova cattura">＋</button>
+        <a href="#/statistiche" data-tab="statistiche"><span class="ti">📊</span>Statistiche</a>
+        <a href="#/altro" data-tab="altro"><span class="ti">⚙️</span>Altro</a>
+      </nav>
+    </div>
+    <div id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

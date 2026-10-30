@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="21 21 66 66"><clipPath id="r"><rect x="21" y="21" width="66" height="66" rx="14"/></clipPath><g clip-path="url(#r)">
+  <rect width="108" height="108" fill="#3f8a4c"/>
+  <path d="M0 52 L22 30 L36 42 L54 22 L74 40 L88 30 L108 48 V108 H0Z" fill="#2c6838"/>
+  <path d="M0 62 C12 58 18 58 27 62 S42 66 54 62 S70 58 81 62 S98 66 108 62 V108 H0Z" fill="#0f5d8c"/>
+  <path d="M0 62 C12 58 18 58 27 62 S42 66 54 62 S70 58 81 62 S98 66 108 62" fill="none" stroke="#5bb8e8" stroke-width="2"/>
+
+  <!-- fungo (porcino) -->
+  <path d="M58 50 H72 C73.5 58 72.5 64 70 68 H60 C57.5 64 56.5 58 58 50Z" fill="#f3e7cb"/>
+  <path d="M47 50 C47 34 83 34 83 50 C83 52.5 81.5 53.5 79 53.5 H51 C48.5 53.5 47 52.5 47 50Z" fill="#8a4a1c"/>
+  <path d="M54 42 C58 37.5 66 36.5 71 38" fill="none" stroke="#b56a33" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- pesce -->
+  <g transform="translate(4 0)">
+  <path d="M30 70 C36 61 47 58.5 56 61 C61 62.5 64.5 66 66 70 C64.5 74 61 77.5 56 79 C47 81.5 36 79 30 70Z" fill="#f4f8fa"/>
+  <path d="M31 70 L21 61.5 C22.5 66 22.5 74 21 78.5Z" fill="#f4f8fa"/>
+  <path d="M44 61.5 C46 57.5 50 56.5 53 57.5 L50 61.5Z" fill="#d5e3ea"/>
+  <circle cx="58" cy="68" r="2" fill="#0f3b57"/>
+  <path d="M47 64 C49.5 67 49.5 73 47 76" fill="none" stroke="#9fb9c6" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+</g></svg>
