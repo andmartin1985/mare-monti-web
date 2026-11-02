@@ -2,8 +2,8 @@
 // Le pagine e i file dell'app (stessa origine) si servono dalla cache e si aggiornano
 // in background; mappe, meteo e API esterne non passano di qui (le mappe hanno la loro cache).
 // Generato alla compilazione (vite.config.js): versione e file dell'app da tenere offline.
-const CACHE = 'mare-monti-app-0.14.2-mvzi675k';
-const PRECACHE = ["./assets/index-f0h6wsob.js","./assets/error-BTdmRKoB.js","./assets/index-CkP80YLT.css","./data/land-it.json","./icon.svg","./icons/apple-touch-icon.png","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png","./manifest.webmanifest"];
+const CACHE = 'mare-monti-app-0.15.0-mvzvnqq7';
+const PRECACHE = ["./assets/index-DV2jjf49.js","./assets/error-BTdmRKoB.js","./assets/index-BqZUlJYy.css","./data/land-it.json","./icon.svg","./icons/apple-touch-icon.png","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png","./manifest.webmanifest"];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['./', ...PRECACHE])));
