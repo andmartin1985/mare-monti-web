@@ -7,4 +7,4 @@ Apri l'app: https://andmartin1985.github.io/mare-monti-web/
 
 I dati restano sul telefono di chi la usa. Per provarla: Altro › Dati dimostrativi › Carica.
 
-Contiene solo l'app compilata (versione 0.11.0).
+Contiene solo l'app compilata (versione 0.12.0).
