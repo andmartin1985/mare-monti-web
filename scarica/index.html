@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scarica Mare e Monti</title>
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<style>
+  :root { --bg: #f4f6f7; --card: #fff; --text: #15232d; --muted: #5d6b75; --primary: #0f5d8c; --line: #dde3e7; color-scheme: light dark; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0e1418; --card: #172128; --text: #e6edf1; --muted: #93a3ad; --primary: #4aa3dc; --line: #26333c; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+  main { max-width: 560px; margin: 0 auto; padding: 24px 16px 40px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+  header img { width: 64px; height: 64px; border-radius: 16px; }
+  h1 { font-size: 1.5rem; margin: 0; }
+  .stamp { color: var(--muted); font-size: 0.9rem; margin: 2px 0 0; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px 16px 16px; margin-bottom: 14px; }
+  h2 { font-size: 1.05rem; margin: 14px 0 8px; }
+  .btn { display: block; text-align: center; padding: 14px; border-radius: 12px; background: var(--primary); color: #fff; font-weight: 700; text-decoration: none; margin: 10px 0; }
+  .btn.alt { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
+  ol { padding-left: 20px; margin: 6px 0; } li { margin: 4px 0; }
+  small, .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="../icons/icon-192.png" alt="">
+    <div><h1>Mare e Monti</h1><p class="stamp">Versione 0.14.0 · aggiornata il 2/11/2026 alle 17:28</p></div>
+  </header>
+
+  <section>
+    <h2>📱 Android</h2>
+    <a class="btn" href="https://github.com/andmartin1985/mare-monti-web/releases/latest/download/mare-monti.apk">Scarica l'app (APK)</a>
+    <ol class="small">
+      <li>Apri il file scaricato (notifica o cartella Download).</li>
+      <li>Se Android lo chiede, consenti a Chrome/Files di "installare app sconosciute" e torna indietro.</li>
+      <li>Tocca <strong>Installa</strong>. Per aggiornare in futuro basta installare la nuova versione sopra: i dati restano.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>🍎 iPhone</h2>
+    <a class="btn alt" href="../">Apri la versione web</a>
+    <p class="small">Aprila con Safari, poi Condividi › "Aggiungi alla schermata Home". Con l'accesso Google l'archivio è salvato anche online.</p>
+  </section>
+
+  <section>
+    <h2>Hai ricevuto un codice di invito?</h2>
+    <p class="small">Dopo l'installazione: <strong>Altro › Account e condivisioni</strong> › Accedi con Google › "Ho un codice".</p>
+    <p class="small muted">Beta privata: massimo 16 persone. I dati restano tuoi; condividi solo ciò che scegli, in modo esatto o sfumato.</p>
+  </section>
+</main>
+</body>
+</html>
