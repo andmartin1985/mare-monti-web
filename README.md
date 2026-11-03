@@ -9,4 +9,4 @@ Scarica l'app Android: https://andmartin1985.github.io/mare-monti-web/scarica/
 
 I dati restano sul telefono di chi la usa. Per provarla: Altro › Dati dimostrativi › Carica.
 
-Contiene solo l'app compilata (versione 0.17.3).
+Contiene solo l'app compilata (versione 0.17.4).
