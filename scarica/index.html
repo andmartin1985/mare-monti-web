@@ -22,16 +22,21 @@
   .btn.alt { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
   ol { padding-left: 20px; margin: 6px 0; } li { margin: 4px 0; }
   small, .muted { color: var(--muted); }
+  .ios-note { background: #fff4d6; color: #5b4300; border: 1px solid #f0d58a; border-radius: 12px; padding: 12px 14px; }
+  @media (prefers-color-scheme: dark) { .ios-note { background: #3a3000; color: #ffe8a3; border-color: #6b5a10; } }
+  .ios #android .btn { background: var(--line); color: var(--muted); pointer-events: none; }
 </style>
 </head>
 <body>
 <main>
   <header>
     <img src="../icons/icon-192.png" alt="">
-    <div><h1>Mare e Monti</h1><p class="stamp">Versione 0.16.0 · aggiornata il 3/11/2026 alle 11:30</p></div>
+    <div><h1>Mare e Monti</h1><p class="stamp">Versione 0.16.0 · aggiornata il 3/11/2026 alle 11:32</p></div>
   </header>
 
-  <section>
+  <p class="ios-note" hidden>📱 <strong>Sei su iPhone: non devi scaricare nessun file.</strong> Il file APK è solo per Android e su iPhone non si apre. Segui i passi qui sotto.</p>
+
+  <section id="android">
     <h2>📱 Android</h2>
     <a class="btn" href="mare-monti.apk">Scarica l'app (APK)</a>
     <h3>Installare</h3>
@@ -49,7 +54,7 @@
     </ol>
   </section>
 
-  <section>
+  <section id="iphone">
     <h2>🍎 iPhone</h2>
     <a class="btn alt" href="../">Apri la versione web</a>
     <h3>Installare</h3>
@@ -76,5 +81,24 @@
       <a href="../privacy/">Informativa privacy</a></p>
   </section>
 </main>
+<script>
+  // iPhone/iPad: niente APK (non si installa), prima la guida per la versione web
+  (function () {
+    var ua = navigator.userAgent;
+    var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    if (!ios) return;
+    document.body.classList.add('ios');
+    var main = document.querySelector('main');
+    var note = document.querySelector('.ios-note');
+    var iphone = document.getElementById('iphone');
+    var android = document.getElementById('android');
+    note.hidden = false;
+    main.insertBefore(note, android);
+    main.insertBefore(iphone, android);
+    var apk = android.querySelector('.btn');
+    apk.removeAttribute('href');
+    apk.textContent = 'APK solo per Android';
+  })();
+</script>
 </body>
 </html>
