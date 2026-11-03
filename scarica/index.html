@@ -17,6 +17,7 @@
   .stamp { color: var(--muted); font-size: 0.9rem; margin: 2px 0 0; }
   section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px 16px 16px; margin-bottom: 14px; }
   h2 { font-size: 1.05rem; margin: 14px 0 8px; }
+  h3 { font-size: 0.95rem; margin: 12px 0 2px; }
   .btn { display: block; text-align: center; padding: 14px; border-radius: 12px; background: var(--primary); color: #fff; font-weight: 700; text-decoration: none; margin: 10px 0; }
   .btn.alt { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
   ol { padding-left: 20px; margin: 6px 0; } li { margin: 4px 0; }
@@ -27,28 +28,50 @@
 <main>
   <header>
     <img src="../icons/icon-192.png" alt="">
-    <div><h1>Mare e Monti</h1><p class="stamp">Versione 0.16.0 · aggiornata il 3/11/2026 alle 09:51</p></div>
+    <div><h1>Mare e Monti</h1><p class="stamp">Versione 0.16.0 · aggiornata il 3/11/2026 alle 11:30</p></div>
   </header>
 
   <section>
     <h2>📱 Android</h2>
     <a class="btn" href="mare-monti.apk">Scarica l'app (APK)</a>
+    <h3>Installare</h3>
     <ol class="small">
-      <li>Apri il file scaricato (notifica o cartella Download).</li>
-      <li>Se Android lo chiede, consenti a Chrome/Files di "installare app sconosciute" e torna indietro.</li>
-      <li>Tocca <strong>Installa</strong>. Per aggiornare in futuro basta installare la nuova versione sopra: i dati restano.</li>
+      <li>Tocca il pulsante qui sopra; se il browser avvisa che il file "potrebbe essere dannoso", scegli <strong>Scarica comunque</strong>.</li>
+      <li>Apri il file scaricato (dalla notifica o dalla cartella <em>Download</em>).</li>
+      <li>Se Android lo chiede, consenti a Chrome (o a "File") di <strong>installare app sconosciute</strong>, poi torna indietro.</li>
+      <li>Tocca <strong>Installa</strong> e apri l'app. Se Play Protect chiede di analizzarla, puoi installarla comunque: è l'app privata della beta.</li>
+      <li>Alla prima apertura consenti l'accesso a <strong>foto</strong> e <strong>posizione</strong> (per leggere il GPS delle foto) e alle <strong>notifiche</strong> (per il numero di novità sull'icona).</li>
+    </ol>
+    <h3>Aggiornare</h3>
+    <ol class="small">
+      <li>Quando esce una versione nuova, l'app mostra <strong>"Nuova versione disponibile · Scarica"</strong> e porta qui.</li>
+      <li>Scarica e installa la nuova versione <strong>sopra</strong> quella che hai: i dati restano. Non disinstallare.</li>
     </ol>
   </section>
 
   <section>
     <h2>🍎 iPhone</h2>
     <a class="btn alt" href="../">Apri la versione web</a>
-    <p class="small">Aprila con Safari, poi Condividi › "Aggiungi alla schermata Home". Con l'accesso Google l'archivio è salvato anche online.</p>
+    <h3>Installare</h3>
+    <ol class="small">
+      <li>Apri il link qui sopra con <strong>Safari</strong> (non Chrome).</li>
+      <li>Tocca <strong>Condividi</strong> (il quadrato con la freccia in su) › <strong>Aggiungi alla schermata Home</strong> › <strong>Aggiungi</strong>.</li>
+      <li>D'ora in poi apri l'app <strong>solo dall'icona</strong>: Safari e l'icona hanno archivi separati.</li>
+      <li>Al primo avvio: <strong>Altro › Account e condivisioni › Accedi con Google</strong>, così l'archivio si salva anche online (iPhone può cancellare i dati delle app web poco usate).</li>
+    </ol>
+    <h3>Aggiornare</h3>
+    <ol class="small">
+      <li>Si aggiorna da sola: quando compare <strong>"Nuova versione disponibile · Aggiorna"</strong>, tocca Aggiorna.</li>
+      <li>Se l'app sembra vecchia, chiudila del tutto (scorri in su dal fondo e butta via la scheda) e riaprila dall'icona. Non togliere l'icona.</li>
+    </ol>
+    <p class="small muted">Su iPhone il numero di novità si vede solo ad app aperta, e le batimetrie personali non ci sono.
+      Le foto della libreria a volte arrivano senza GPS: in quel caso la posizione si indica sulla mappa.</p>
   </section>
 
   <section>
     <h2>Hai ricevuto un codice di invito?</h2>
     <p class="small">Dopo l'installazione: <strong>Altro › Account e condivisioni</strong> › Accedi con Google › "Ho un codice".</p>
+    <p class="small">Problemi? Nell'app: <strong>Altro › Segnala un problema</strong>, e manda il messaggio a chi ti ha invitato.</p>
     <p class="small muted">Beta privata: massimo 16 persone. I dati restano tuoi; condividi solo ciò che scegli, in modo esatto o sfumato.
       <a href="../privacy/">Informativa privacy</a></p>
   </section>
